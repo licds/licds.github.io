@@ -3338,6 +3338,39 @@ input, select, textarea {
 		color: #636363;
 		border-radius: 0.25em;
 	}
+		#main .row {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px; /* Space between rows */
+		}
+
+		#main .image {
+			flex: 0 0 30%; /* The image takes up 30% of the row */
+			max-width: 30%; /* To ensure the image container does not exceed 30% width */
+		}
+
+		.image img {
+			width: 100%; /* The image will fill its container */
+			max-height: 200px; /* Maximum height of the image */
+			object-fit: contain; /* Ensures the image is not stretched */
+			border-radius: 0px;
+		}
+
+		#main .text {
+			flex: 0 0 70%; /* The text takes up 70% of the row */
+			padding-left: 30px; /* Space between image and text */
+		}
+		
+		/*#main .image img {
+			width: 300px;
+			border-radius: 0px;
+			max-height: 250px;
+			object-fit: contain;
+		} */
+		
+		#main .text {
+			padding-left: 20px; /* Space between image and text */
+		}
 
 		#main input, #main select, #main textarea {
 			color: #636363;
